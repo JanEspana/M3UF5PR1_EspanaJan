@@ -11,5 +11,6 @@ namespace M3UF5PR1_EspanaJan.Models.DTOs
         public string Name { get; set; }
         public string Job { get; set; }
         public int XP { get; set; }
+        public string RescueNum { get; set; }
     }
 }

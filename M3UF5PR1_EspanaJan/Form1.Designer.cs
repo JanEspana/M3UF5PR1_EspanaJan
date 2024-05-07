@@ -33,14 +33,15 @@
             button3 = new Button();
             label1 = new Label();
             button4 = new Button();
+            button5 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            button1.Location = new Point(176, 129);
+            button1.Location = new Point(117, 195);
             button1.Name = "button1";
-            button1.Size = new Size(152, 60);
+            button1.Size = new Size(120, 39);
             button1.TabIndex = 0;
             button1.Text = "CLOSE";
             button1.UseVisualStyleBackColor = true;
@@ -85,17 +86,30 @@
             button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.Location = new Point(176, 63);
             button4.Name = "button4";
-            button4.Size = new Size(152, 60);
+            button4.Size = new Size(158, 60);
             button4.TabIndex = 4;
             button4.Text = "MANAGEMENT";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.FlatStyle = FlatStyle.System;
+            button5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Location = new Point(176, 129);
+            button5.Name = "button5";
+            button5.Size = new Size(158, 60);
+            button5.TabIndex = 5;
+            button5.Text = "RESCUES";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(348, 248);
+            ClientSize = new Size(348, 247);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(label1);
             Controls.Add(button3);
@@ -114,5 +128,6 @@
         private Button button3;
         private Label label1;
         private Button button4;
+        private Button button5;
     }
 }

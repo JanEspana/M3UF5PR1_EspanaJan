@@ -104,7 +104,7 @@ namespace M3UF5PR1_EspanaJan
                     RescueDAO rescueDAO = new RescueDAO();
 
                     rescueDAO.InsertRescue(rescue);
-                    if (rescue.GA > 30)
+                    if (rescue.GA < 30)
                     {
                         MessageBox.Show("Animal moved to CRAM. Affectation number: " + rescue.GA + ". You won 50XP!");
                         person.XP += 50;
@@ -118,6 +118,7 @@ namespace M3UF5PR1_EspanaJan
                     MessageBox.Show("Final results: " + person.Name + " has " + person.XP + "XP");
 
                     XMLHelper xmlHelper = new XMLHelper();
+                    person.RescueNum = rescue.RescueNumber;
                     xmlHelper.InsertPerson(person);
 
                     Form1 form1 = new Form1();
@@ -163,6 +164,7 @@ namespace M3UF5PR1_EspanaJan
                     MessageBox.Show("Final results: " + person.Name + " has " + person.XP + "XP");
 
                     XMLHelper xmlHelper = new XMLHelper();
+                    person.RescueNum = rescue.RescueNumber;
                     xmlHelper.InsertPerson(person);
 
                     Form1 form1 = new Form1();

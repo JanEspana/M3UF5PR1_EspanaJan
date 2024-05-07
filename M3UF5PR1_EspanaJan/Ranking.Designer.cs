@@ -38,6 +38,7 @@ namespace M3UF5PR1_EspanaJan
             personBindingSource = new BindingSource(components);
             label1 = new Label();
             button2 = new Button();
+            RescueNum = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)personBindingSource).BeginInit();
             SuspendLayout();
@@ -46,12 +47,12 @@ namespace M3UF5PR1_EspanaJan
             // 
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn, jobDataGridViewTextBoxColumn, xPDataGridViewTextBoxColumn });
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { nameDataGridViewTextBoxColumn, jobDataGridViewTextBoxColumn, xPDataGridViewTextBoxColumn, RescueNum });
             dataGridView1.DataSource = personBindingSource;
             dataGridView1.Location = new Point(12, 146);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(424, 197);
+            dataGridView1.Size = new Size(549, 197);
             dataGridView1.TabIndex = 0;
             // 
             // nameDataGridViewTextBoxColumn
@@ -86,7 +87,7 @@ namespace M3UF5PR1_EspanaJan
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(127, 61);
+            label1.Location = new Point(185, 69);
             label1.Name = "label1";
             label1.Size = new Size(191, 31);
             label1.TabIndex = 1;
@@ -95,7 +96,7 @@ namespace M3UF5PR1_EspanaJan
             // button2
             // 
             button2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(163, 349);
+            button2.Location = new Point(225, 348);
             button2.Name = "button2";
             button2.Size = new Size(130, 64);
             button2.TabIndex = 4;
@@ -103,11 +104,19 @@ namespace M3UF5PR1_EspanaJan
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // RescueNum
+            // 
+            RescueNum.DataPropertyName = "RescueNum";
+            RescueNum.HeaderText = "RescueNum";
+            RescueNum.MinimumWidth = 6;
+            RescueNum.Name = "RescueNum";
+            RescueNum.Width = 125;
+            // 
             // Ranking
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(448, 424);
+            ClientSize = new Size(573, 424);
             Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
@@ -129,5 +138,6 @@ namespace M3UF5PR1_EspanaJan
         private BindingSource personBindingSource;
         private Label label1;
         private Button button2;
+        private DataGridViewTextBoxColumn RescueNum;
     }
 }

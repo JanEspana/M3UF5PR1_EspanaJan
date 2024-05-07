@@ -32,5 +32,12 @@ namespace M3UF5PR1_EspanaJan
             ranking.Show();
             Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Rescues rescues = new Rescues();
+            rescues.Show();
+            Hide();
+        }
     }
 }

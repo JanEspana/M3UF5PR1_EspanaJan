@@ -1,3 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <scores>
+  <person>
+    <name>Jan</name>
+    <job>Vet</job>
+    <xp>130</xp>
+    <rescue>RES471</rescue>
+  </person>
+  <person>
+    <name>Ramon</name>
+    <job>Technical</job>
+    <xp>95</xp>
+    <rescue>RES426</rescue>
+  </person>
 </scores>
