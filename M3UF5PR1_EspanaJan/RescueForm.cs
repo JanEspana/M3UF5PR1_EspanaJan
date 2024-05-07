@@ -94,6 +94,10 @@ namespace M3UF5PR1_EspanaJan
                     double ga = rescue.CalculateGA(animal, double.Parse(ad.Text), true);
                     rescue.RescueDate = DateTime.Parse(rescueDate.Text);
                     rescue.GenerateRescue(animal);
+                    if (ga < 0)
+                    {
+                        ga = 0;
+                    }
                     rescue.GA = ga;
                     rescue.Location = location.Text;
 
